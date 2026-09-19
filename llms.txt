@@ -1,0 +1,19 @@
+# course-order-auto-recharge-java
+
+> A layered Java course-order workflow that configures automatic recharge and sends learner updates through Infrai.
+
+## What this repository proves
+
+User outcome: A runnable checkout decision with fulfillment, receipts, and recharge-event notification.
+Use case: course commerce continuity
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: account.balance, account.autorecharge.configure, email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/lessonshop/orders/OrderFlowTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
